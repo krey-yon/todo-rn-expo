@@ -1,6 +1,8 @@
-import { data } from "@/data/todoData";
-import { Text, View } from "react-native";
+import { Text, View, TextInput, Pressable, StyleSheet, FlatList } from "react-native";
+import MaterialCommunityIcons from '@expo/vector-icons/MaterialCommunityIcons';
 import { SafeAreaView } from "react-native-safe-area-context";
+import { data } from "@/data/todoData";
+import { useState } from "react";
 
 export default function Index() {
   return (
