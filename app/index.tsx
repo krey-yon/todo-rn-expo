@@ -10,6 +10,7 @@ import MaterialCommunityIcons from "@expo/vector-icons/MaterialCommunityIcons";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { data } from "@/data/todoData";
 import { useState } from "react";
+import FloatingIcon from "@/component/FloatingIcon";
 
 //interface for todo item
 interface Todo {
@@ -67,6 +68,7 @@ export default function Index() {
   );
 
   return (
+    
     <SafeAreaView style={styles.container}>
       <View style={styles.inputContainer}>
         <TextInput 
@@ -86,6 +88,7 @@ export default function Index() {
         keyExtractor={(item) => item.id.toString()}
         contentContainerStyle= { {flexGrow: 1} }
       />
+      <FloatingIcon />
     </SafeAreaView>
   );
 }
